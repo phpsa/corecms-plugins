@@ -8,7 +8,7 @@
   <?php } ?>
 </div>
 <script type="text/javascript"><!--
-docReady(function(){
+window.onload = function() {
   $(function(){
        window.myFlux = new flux.slider('#fluxslider<?php echo $module; ?>', {
           autoplay: <?php echo $autoplay; ?>,
@@ -18,5 +18,5 @@ docReady(function(){
           delay: <?php echo $delay; ?>
       });
   });
-});
+};
 --></script>
